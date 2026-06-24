@@ -1,53 +1,116 @@
-# 🛍 Urbanic - Ecommerce Platform
+# Urbanic - E-Commerce Platform
 
-Urbanic is a full-featured Ecommerce web application built using Django.  
-It allows users to browse products, manage their cart, and place orders through a clean and user-friendly interface.
+## Project Description
 
----
+Urbanic is an e-commerce web application developed using Django. The project allows users to browse products, manage carts, place orders, and manage products through a custom admin dashboard.
 
-## 🚀 Features
+## Technologies Used
 
-- User Registration & Login Authentication
-- Product Listing & Detail Pages
-- Add to Cart Functionality
-- Order Placement System
-- Admin Dashboard for Product Management
-- Media/Image Handling
+* Python 3.14
+* Django 6.0.6
+* SQLite3
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* Razorpay Payment Gateway
 
----
+## Software Requirements
 
-## 🛠 Tech Stack
+Before running the project, install the following:
 
-- Python
-- Django
-- HTML5
-- CSS3
-- JavaScript
-- SQLite (Development Database)
+* Python 3.14 or above
+* Visual Studio Code (recommended)
+* Git (optional)
 
----
+## Python Packages Required
 
-## 🎯 Project Purpose
+Install all dependencies using:
 
-This project was developed to understand and implement:
+```bash
+pip install -r requirements.txt
+```
 
-- Django MVC Architecture
-- Database Models & ORM
-- Authentication System
-- Cart & Order Logic
-- Backend-Frontend Integration
+Important packages used:
 
----
+```bash
+Django==6.0.6
+Pillow==12.2.0
+razorpay
+```
 
-## 👩‍💻 Developed By
+If any package is missing:
 
-**Grishma Bhuva**
+```bash
+pip install Django
+pip install Pillow
+pip install razorpay
+```
 
----
+## Steps to Run the Project
 
-⭐ If you like this project, feel free to star the repository!
+1. Open terminal inside the project folder.
 
+2. Install dependencies:
 
+```bash
+pip install -r requirements.txt
+```
 
+3. Apply migrations:
 
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
 
+4. Create superuser (only first time):
+
+```bash
+python manage.py createsuperuser
+```
+
+5. Start the server:
+
+```bash
+python manage.py runserver
+```
+
+6. Open browser:
+
+```text
+http://127.0.0.1:8000/
+```
+
+Admin Panel:
+
+```text
+http://127.0.0.1:8000/admin/
+```
+
+Custom Dashboard:
+
+```text
+http://127.0.0.1:8000/admin/dashboard/
+```
+
+## Database
+
+* Database used: SQLite3
+* Database file: db.sqlite3
+
+## Notes
+
+* Make sure Pillow is installed because the project uses ImageField.
+* If Razorpay module error occurs, install it using:
+
+```bash
+pip install razorpay
+```
+
+* Media files are stored inside the `media` folder.
+
+## Developed By
+
+Grishma Bhuva
+MCA Student
